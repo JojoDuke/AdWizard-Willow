@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: adwizard-willow
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: "22.16.0"
+      - key: OPENROUTER_API_KEY
+        sync: false
