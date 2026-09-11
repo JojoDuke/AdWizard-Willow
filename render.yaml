@@ -11,3 +11,13 @@ services:
         value: "22.16.0"
       - key: OPENROUTER_API_KEY
         sync: false
+      - key: PUBLIC_BASE_URL
+        value: https://adwizard-willow.onrender.com
+      - key: VILLOW_PUBLISHER_ID
+        sync: false
+      - key: VILLOW_AGENT_ID
+        sync: false
+      - key: VILLOW_KEY_ID
+        sync: false
+      - key: VILLOW_SECRET
+        sync: false

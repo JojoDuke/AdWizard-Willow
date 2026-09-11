@@ -1,0 +1,12 @@
+publisher_id: YOUR_PUBLISHER_ID
+agent_id: YOUR_AGENT_ID
+name: AdWizard Ads Generator
+version: 0.1.0
+capabilities:
+  streaming: true
+task_templates:
+  - slug: generate_ads
+    category_slug: documents_forms_data_extraction
+    artifact_type: generic
+    typical_charge: 80
+    unit_ceiling: 200

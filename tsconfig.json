@@ -8,6 +8,8 @@
     "strict": true,
     "skipLibCheck": true,
     "noEmit": true,
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
     "outDir": "dist"
   },
   "include": [

@@ -10,10 +10,14 @@
     "dev": "mastra dev",
     "build": "mastra build",
     "start": "mastra start",
-    "generate:ads": "node --env-file=.env --import tsx scripts/run-ads.ts"
+    "start:villow": "tsx src/villow/server.ts",
+    "generate:ads": "node --env-file=.env --import tsx scripts/run-ads.ts",
+    "villow:validate": "villow-node validate agent.yaml",
+    "villow:harness": "node --env-file=.env --import tsx scripts/villow-harness.ts"
   },
   "dependencies": {
     "@mastra/core": "1.64.0",
+    "@villow/sdk": "file:vendor/villow-sdk-0.1.1.tgz",
     "mastra": "1.27.3",
     "zod": "^4.5.4"
   },
